@@ -6,11 +6,47 @@
     <title>M.Usman Haider</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1135493644.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="script.js" defer></script>
+    
 </head>
 <body>
+    <!-- <div id="assistant-container">
+        <div id="assistant-message">Hi, I am Usman's AI Assistant. What would you like to know today?</div>
+        <i class="fa-solid fa-robot"   id="fixed-icon"></i>
+    </div> -->
+    <div class="chatbot-container">
+        <button class="chatbot-toggler">
+          <span class="material-symbols-rounded">mode_comment</span>
+          <span class="material-symbols-outlined">close</span>
+        </button>
+        <div class="initial-message">
+          Hi, I am Usman's AI Assistant. What would you like to know today?
+        </div>
+        <div class="chatbot">
+          <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined">close</span>
+          </header>
+          <ul class="chatbox">
+            <li class="chat incoming">
+              <span class="material-symbols-outlined">smart_toy</span>
+              <p>Hi, I am Usman's AI Assistant. What would you like to know today?</p>
+            </li>
+          </ul>
+          <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-rounded">send</span>
+          </div>
+        </div>
+      </div>      
+
     <div id="header">
         <div class="container">
-            <nav>
+            <nav id="fixed">
                 <h1 class="logo">Usma<span>n.</span></h1>
                 <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
@@ -23,7 +59,7 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p></p>
+                <p>Data Scientist</p>
                 <h1>Hi, i'm <span>M</span>.<span>Usman<br>Haider</span> From <br>Pakistan</h1>
             </div>
         </div>
@@ -33,72 +69,62 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="4.png" class="up">
+                    <img src="" class="up">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>about.me is a personal web hosting service 
-                        co-founded by Ryan Freitas, Tony Conrad and 
-                        Tim Young in October 2009. The site offers 
-                        registered users a simple platform from which 
-                        to link multiple online identities, relevant 
-                        external sites, and popular social networking 
-                        websites such as Facebook, Flickr
-                        about.me is a personal web hosting service 
-                        co-founded by Ryan Freitas, Tony Conrad and
-                         Tim Young in October 2009. The site offers 
-                         registered users a simple platform from which
-                          to link multiple online identities, relevant
-                           external sites, and popular social networking
-                            websites such as Facebook, Flickr
-                            about.me is a personal web hosting service 
-                            co-founded by Ryan Freitas, Tony Conrad and 
-                            Tim Young in October 2009. The site offers 
-                            registered users a simple platform from which 
-                            to link multiple online identities, relevant 
-                            external sites, and popular social networking 
-                            websites such as Facebook, Flickr
-                            about.me is a personal web hosting service 
-                            co-founded by Ryan Freitas, Tony Conrad and
-                             Tim Young in October 2009. The site offers 
-                             registered users a simple platform from which
-                              to link multiple online identities, relevant
-                               external sites, and popular social networking
-                                websites such as Facebook, Flickr
-                                me is a personal web hosting service 
-                                co-founded by Ryan Freitas, Tony Conrad and
-                                 Tim Young in October 2009. The site offers 
-                                 registered users a simple platform from which
-                                  to link multiple online identities</p>
+                    <p>Hello! I'm a data scientist at StechAI, deeply passionate 
+                        about exploring the vast world of Machine Learning and 
+                        Artificial Intelligence. My enthusiasm for AI/ML is constantly 
+                        growing, and I love crafting new projects in this realm. 
+                        The impact these technologies can have is truly amazing! 
+                        If you share the same passion and are interested in collaboration, 
+                        I'm always open to connecting with like-minded individuals. Let's 
+                        explore the future of AI together!</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificates')">Certifications</p>
                         <p class="tab-links" onclick="opentab('mycv')">CV</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>Python</span><br>I can solve problems.</li>
-                            <li><span>Traning ML Models</span><br></li>
-                            <li><span>Building ML Pipelines</span><br></li>
-                            <li><span>Data Analysis</span><br></li>
-                            <li><span>Java</span><br></li>
+                            <li><span>ML/NLP</span><br>Building models and pipelines</li>
+                            <li><span>Data Analysis</span><br>Seaborn, Matplotlib ,Plotly</li>
+                            <li><span>Programming Languages</Base></span><br>Python ,Java ,Scala (Apache Spark) </li>
+                            <li><span>Frameworks</span><br> Flask ,Django ,Streamlit ,Dash</li>
+                            <li><span>Databases</Base></span><br>MongoDB ,SQL Server, Snowflake</li>
+                            <li><span>Project management</span><br>Using all these skills to create quality End-to-End projects</li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>2023 - current</span><br>At Google</li>
-                            <li><span>2020 - 2022</span><br>At Facebook</li>
+                            <li><span>2023/December - Current</span><br>Data Scientist @ STechAI</li>
+                            <li><span>2023/September - 2023/November</span><br>Internship as a Data Scienctist @ STechAI</li>
+                            <!-- <li><span>2023 - current</span><br>Participating in Kaggle competitions</li> -->
+                            <li><span>2022 - current</span><br>Makking ML base Projects</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>2018</span><br>Inter in IT at Superior</li>
-                            <li><span>2018 - 2022</span><br>Master in IT At Superior</li>
+                            <li><span>Bachelor of Science in Information Technology</span><br>Superior College Sargodha<br>DSA,OOP,Software Engineering,Statistics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certificates">
+                        <ul>
+                            <li><span>Supervised Machine Learning: Regression & Classification</span><br>I completed a certificate program at Deeplearning.AI, specializing in
+                                Supervised Machine Learning for Regression and Classification,
+                                demonstrating proficiency in solving regression and classification
+                                problems.</li>
+                            <li><span>Intermediate Machine Learning</span><br>I've achieved an Intermediate Machine Learning certificate from Kaggle, showcasing my skills in managing missing data, diverse categories, efficient ML workflows, data accuracy, and predictive analysis.</li>
+                            <li><span>Pandas</span><br>I've been certified in Pandas by Kaggle, delving deep into its intricacies and gaining a comprehensive understanding of its functionalities.</li>
+                            <li><span>Python</span><br>I've earned a Kaggle certification in Python, where I immersed myself in comprehensive learning, including an in-depth exploration of Pandas.</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="mycv">
-                        <a href="images/my-cv.pdf" download class="btn0">Download CV</a>
+                        <a href="images/usman-haider-cv.pdf" download class="btn0" target="_blank">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -111,35 +137,40 @@
             <h1 class="sub-title">My Blogs</h1>
             <div class="bolg-list">
                 <div class="blogs">
-                    <h2>Deap Learning</h2>
-                    <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh loits good hy bhi seekh lo.
+                    <h2>Comprehensive guide to Supervised & Unsupervised ML</h2>
+                    <p>
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="https://medium.com/@usman-haider/a-comprehensive-guide-to-supervised-and-unsupervised-machine-learning-cfe952601f4a" target="_blank">Read more</a>
                 </div>
                 <div class="blogs">
-                    <h2>AI</h2>
-                    <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh loits good hy bhi seekh lo.
+                    <h2>Creating Conversational Chatbot</h2>
+                    <p>
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="https://blog.gopenai.com/creating-conversational-chatbot-5a37a4fd7d33" target="_blank">Read more</a>
                 </div>
                 <div class="blogs">
-                    <h2>Data Scientist</h2>
-                    <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh loits good hy bhi seekh lo.
+                    <h2>A Comprehensive Guide to ETL with Spark and Scala</h2>
+                    <p>
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="https://medium.com/@usman-haider/a-comprehensive-guide-to-etl-with-spark-and-scala-0bf6e1b6dab1" target="_blank">Read more</a>
                 </div>
                 <div class="blogs">
-                    <h2>Machine learning</h2>
-                    <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                        its good hy bhi seekh loits good hy bhi seekh lo.
+                    <h2>The Transformative Power of AI: Changing Lives Across the Globe</h2>
+                    <p>
                     </p>
-                    <a href="#">Read more</a>
+                    <a href="https://medium.com/@gusmang525/the-transformative-power-of-ai-changing-lives-across-the-globe-84ada7caecf4" target="_blank">Read more</a>
                 </div>
+                <div class="blogs">
+                    <h2>Job Role of Data Scientist</h2>
+                    <p></p>
+                    <a href="https://medium.com/@usman-haider/job-role-of-data-scientist-4ad3c64207de" target="_blank">Read more</a>
+                </div>
+                <div class="blogs">
+                    <h2>Mastering the Art of Complete Model Prediction in Machine Learning</h2>
+                    <p></p>
+                    <a href="https://medium.com/@usman-haider/mastering-the-art-of-complete-model-prediction-in-machine-learning-163d1788c51e" target="_blank">Read more</a>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -150,33 +181,57 @@
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/work-1.png">
+                    <img src="images/agrefine.jpg">
                     <div class="layer">
-                        <h3>AI</h3>
-                        <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                            its good hy bhi seekh loits good hy bhi seekh lo.
+                        <h3>Agrefine (AI based Android Application)</h3>
+                        <p>
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/osman-haider/Agrefine" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-2.png">
+                    <img src="images/Olympic_analysis.jpg">
                     <div class="layer">
-                        <h3>Machine Learning</h3>
-                        <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                            its good hy bhi seekh loits good hy bhi seekh lo.
+                        <h3>Olypmic Data Analysis</h3>
+                        <p>
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/osman-haider/Olympics-data-analysis" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work-3.png">
+                    <img src="images/temperature.jpg">
                     <div class="layer">
-                        <h3>Deep Learning</h3>
-                        <p>its good hy bhi seekh lo.its good hy bhi seekh lo.
-                            its good hy bhi seekh loits good hy bhi seekh lo.
+                        <h3>Globel Temperature Analysis & Prediction</h3>
+                        <p>
                         </p>
-                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="https://github.com/osman-haider/Globle-Temperature" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/chatbot.jpg">
+                    <div class="layer">
+                        <h3>Conversational Chatbot</h3>
+                        <p>
+                        </p>
+                        <a href="https://github.com/osman-haider/ChatMeteoBot" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/book.jpg">
+                    <div class="layer">
+                        <h3>Book Recommender System</h3>
+                        <p>
+                        </p>
+                        <a href="https://github.com/osman-haider/Book-Recommendation-System" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/ETL.png">
+                    <div class="layer">
+                        <h3>ETL pipeline using Spark</h3>
+                        <p>
+                        </p>
+                        <a href="https://github.com/osman-haider/ETL_Pipeline_Spark" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -190,12 +245,14 @@
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
                     <p><i class="fa-solid fa-envelope"></i> osmanhaider167@gmail.com</p>
-                    <p><i class="fa-sharp fa-solid fa-phone"></i> +92304 1581788</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i> +92-304-1581788</p>
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/m-usman-haider"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/osman-haider"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/m-usman-haider" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/osman-haider" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <!-- <a href="https://www.kaggle.com/usmanhaider09" target="_blank"><i class="fa-brands fa-kaggle"></i></a> -->
+                        <a href="https://medium.com/@usman-haider" target="_blank"><i class="fa-brands fa-medium"></i></a>
                     </div>
-                    <a href="images/my-cv.pdf" download class="btn">Download CV</a>
+                    <a href="images/usman-haider-cv.pdf" download class="btn" target="_blank">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -209,9 +266,41 @@
             </div>
         </div>
         <div class="copywrite">
-            <p>Copywrite usman.Made for Portfolio website</p>
+            <p>"Crafted with passion and protected by copyright."</p>
         </div>
     </div>
+
+    <script>
+        // JavaScript to show initial message for 10 seconds
+        document.addEventListener('DOMContentLoaded', function() {
+          var initialMessage = document.querySelector('.initial-message');
+          var chatbotButton = document.querySelector('.chatbot-toggler');
+          
+          // Position the initial message to the left of the chat button
+          var buttonRect = chatbotButton.getBoundingClientRect();
+          initialMessage.style.left = (buttonRect.left - initialMessage.offsetWidth - 20) + 'px'; // Adjust offset as needed
+          initialMessage.style.top = (buttonRect.top + (chatbotButton.offsetHeight / 2) - (initialMessage.offsetHeight / 2)) + 'px'; // Center vertically with the button
+          
+          setTimeout(function() {
+            initialMessage.style.display = 'none';
+          }, 10000); // 10 seconds in milliseconds
+        });
+      </script>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const textElement = document.querySelector(".header-text h1");
+
+            function restartAnimation() {
+                textElement.style.animation = "none"; // Remove the animation
+                void textElement.offsetWidth; // Trigger reflow (force reflow)
+                textElement.style.animation = "typeAnimation 6s linear"; // Restart the animation
+            }
+
+            textElement.addEventListener("animationend", restartAnimation);
+        });
+    </script>
 
 
     <script>
@@ -242,7 +331,7 @@
     </script>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbx165Zw_M2uwWdei8sr2StMcdLTs9nZ3B_8wOhQ3lKx6MezE8z0IFiaTjwWy5bJVq9T/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwP0ZpXL71OUplmVe50foqfbfC-kTIPT1LEqNM6WcrzXnkZSPN58WtYid_JUY9-Av9K/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg");
     
