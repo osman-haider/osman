@@ -597,11 +597,11 @@ nav .fa-solid{display: none;}
 @media only screen and (max-width: 600px){
         #header{
             
-            width: 100%;
-            height: 100%;
+            /* width: 100%;
+            height: 100%; */
             /* margin-left: 30%; */
             background-image: url(images/mobile-background.png);
-            background-size: cover;
+            /* background-size: cover; */
             /* background-position: right; */
             /* padding-right: 0; */
             /* padding-top: 60px; */
@@ -616,14 +616,6 @@ nav .fa-solid{display: none;}
             margin-left: 0;
         }
         
-        .initial-message {
-            position: fixed;
-            left: -260px; /* Adjust position from left */
-            top: 0; /* Adjust position from top */
-            width: calc(50%); /* Full width minus padding */
-            font-size: 15px; /* Adjust font size for smaller screens */
-            padding: 10px; /* Increase padding for better readability */
-        }
         nav .fa-sharp{
             display: block;
             font-size: 25px;
