@@ -54,6 +54,7 @@ body{
     border-radius: 50%;
     background: #ff004f;
     transition: all 0.2s ease;
+    z-index: 1001;
   }
   body.show-chatbot .chatbot-toggler {
     transform: rotate(90deg);
@@ -235,6 +236,7 @@ body{
     font-size: 14px;
     line-height: 1.4;
     box-shadow: 4px 20px 14px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
   }
 
 #header{
@@ -594,7 +596,13 @@ nav .fa-solid{display: none;}
 
 @media only screen and (max-width: 600px){
         #header{
+            
+            width: 100%;
             background-image: url(images/mobile-background.png);
+            /* background-size: cover;
+            background-position: right top;
+            padding-right: 0; */
+            /* padding-top: 60px; */
         }
         .header-text{
             margin-top: 120%;
@@ -602,6 +610,14 @@ nav .fa-solid{display: none;}
         }
         .header-text h1{
             font-size: 30px;
+        }
+        .initial-message {
+            position: fixed;
+            left: -260px; /* Adjust position from left */
+            top: 0; /* Adjust position from top */
+            width: calc(50% - 20px); /* Full width minus padding */
+            font-size: 12px; /* Adjust font size for smaller screens */
+            padding: 30px; /* Increase padding for better readability */
         }
         nav .fa-sharp{
             display: block;
